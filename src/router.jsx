@@ -6,11 +6,12 @@ import {
 } from "react-router-dom";
 import Dashboard from "./pages/Client/Dashboard";
 import Quiz from "./pages/Client/Quiz";
+import Results from "./pages/Client/Results";
 import Login from "./pages/Auth/Login";
 import Register from "./pages/Auth/Register";
-import AuthLayout from "./Layouts/authLayout/layout";
+import AuthLayout from "./Layouts/authLayout";
 import BaseLayout from "./Layouts/baseLayout";
-import MainLayout from "./Layouts/mainLayout/mainLayout";
+import MainLayout from "./Layouts/mainLayout";
 
 export default createBrowserRouter(
   createRoutesFromElements(
@@ -18,6 +19,7 @@ export default createBrowserRouter(
       <Route path="dashboard" element={<MainLayout />}>
         <Route index element={<Dashboard />} />
         <Route path="quiz" element={<Quiz />} />
+        <Route path="results" element={<Results />} />
       </Route>
       <Route path="auth" element={<AuthLayout />}>
         <Route index element={<Login />} />

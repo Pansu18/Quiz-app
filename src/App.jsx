@@ -5,9 +5,9 @@ import router from "./router";
 
 function App() {
   return (
-    <ErrorBoundary>
+    <>
       <RouterProvider router={router} />
-    </ErrorBoundary>
+    </>
   );
 }
 
