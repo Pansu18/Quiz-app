@@ -6,7 +6,7 @@ export const loginAction = (values) => async (dispatch) => {
     type,
     apiData: {
       method: "post",
-      url: "login",
+      url: "/api/users/login",
       data: values,
     },
     meta: { loadingId: -1 },
@@ -20,7 +20,7 @@ export const registerAction = (values) => async (dispatch) => {
     type,
     apiData: {
       method: "post",
-      url: "register",
+      url: "/api/users/register",
       data: values,
     },
     meta: { loadingId: -1 },

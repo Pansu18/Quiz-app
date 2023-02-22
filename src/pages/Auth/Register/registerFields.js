@@ -97,7 +97,7 @@ export const registerFields = [
   },
   {
     component: Input,
-    name: "confirmPassword",
+    name: "cpassword",
     id: "confirm-password",
     type: "password",
     "data-value": "",

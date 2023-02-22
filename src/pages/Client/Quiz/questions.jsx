@@ -17,11 +17,11 @@ function Questions({
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="text-center mt-[80px]">
-        <h1>{questionList?.question}</h1>
+        <h1 className="text-[30px] font-bold">{questionList?.question}</h1>
       </div>
 
       <RadioGroup
-        className="mt-[50px] mx-auto"
+        className="mt-[50px] mx-auto w-full max-w-[70%]"
         value={valueInitial}
         onChange={handleChange}
       >
